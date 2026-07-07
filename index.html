@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>.:NOTAS PARCIAIS:.</title>
+		<link rel="stylesheet" type="text/css" href="estilo-old.css" />
+		<meta http-equiv="Pragma" content="no-cache, no-store" />
+	</head>
+	
+<form name='altera_notas' method='post' action='altera_parcial.php'>
+<p align='center' style='font-size:16px'>As parciais desse aluno já foram inseridas. <br/>
+<input type='hidden' name='turma' value='$turma'>
+<input type='hidden' name='num' value='$num'>
+<input name='nome' type='hidden' value='<?php echo $nome?>' />
+<input name='num' type='hidden' value='<?php echo $num?>' />
+<input name='turma' type='hidden' value='<?php echo $turma?>' />
+
+	<p align='center'><input type="button" onclick="document.parciais.submit()" name="enviar" value="Enviar"  /></p>
+	</form>
+	</body>
+</html>	
